@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Links</title>
+    <script>
+        function redirectToSite() {
+            const selectElement = document.getElementById('linkSelect');
+            const selectedValue = selectElement.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Selecione um site para visitar</h1>
+    <select id="linkSelect" onchange="redirectToSite()">
+        <option value="">-- Selecione um link --</option>
+        <option value="https://kaique12santos.github.io/blog/">Blog</option>
+        <option value="https://kaique12santos.github.io/Pagina_De_noticias/">Página de noticias </option>
+        <option value="https://kaique12santos.github.io/Formulario_base/">Formulario</option>
+        <option value="https://kaique12santos.github.io/perfil_social/">Perfil Profissional</option>
+    </select>
+</body>
+</html>
